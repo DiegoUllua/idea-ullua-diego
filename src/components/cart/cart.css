@@ -1,0 +1,9 @@
+.cart{
+    height: 5vmin;
+  pointer-events: none;
+}
+p{
+    color: white;
+    font-size: 15px;
+
+}
