@@ -1,0 +1,49 @@
+.itemCountContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    margin: 5px;
+    border: solid 1px rgb(28, 107, 172);;
+    background-color: rgb(233, 231, 231);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 220px;
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: rgb(28, 107, 172);
+}
+
+.inputContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputBtn{
+    background-color: rgb(40, 154, 247);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: rgb(28, 107, 172);
+    border-radius: 3px;
+    margin: 3px;
+    cursor: pointer;
+}
+.inputBtn:hover{
+    background-color: rgb(28, 107, 172);
+}
+
+.addToCartBtn{
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(28, 107, 172);
+    border: rgb(28, 107, 172);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.addToCartBtn:hover{
+    background-color:rgb(28, 107, 172) ;
+    color: white;
+}
