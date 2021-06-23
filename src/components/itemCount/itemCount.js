@@ -1,29 +1,31 @@
 import React ,{useState} from 'react';
 import './itemCount.css';
 
-const ItemCount = ({nombreProducto, stock,onAdd}) => {
-
-
-    const [initialValue, setInitialValue]  = useState(1);
+const ItemCount = ({nombreProducto, stock,setStock,initialValue,setInitialValue,onAdd}) => {
 
     const restarCantidad = () =>{
 
-        if(initialValue > 1){
-            setInitialValue(initialValue -1)
+        if(initialValue > 1 ){
+            setInitialValue(initialValue-1)
+            setStock(stock+1)
+            
         }
 
     }
 
     const agregarCantidad = () =>{
 
-        if(initialValue < stock){
-            setInitialValue(initialValue +1)
+        if(stock > 0){
+            setInitialValue(initialValue+1)
+            setStock(stock-1)
+           
         }
 
     }
     return ( 
         <div className="itemCountContainer">
             <label>{nombreProducto}</label>
+            <small>Stock: {stock}</small>
             <div className="inputContainer">
                 <button className="inputBtn" onClick={restarCantidad}>-</button>
                 <input type="text" value={initialValue}/>
