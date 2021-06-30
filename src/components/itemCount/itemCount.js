@@ -49,10 +49,10 @@ const ItemCount = ({nombreProducto,initialValue,onAdd}) => {
             
             <div className="inputContainer">
                 <button className="inputBtn" onClick={restarCantidad}>-</button>
-                <input type="text" value={value}/>
+                <input  className="inputField" type="text" value={value}/>
                 <button className="inputBtn" onClick={agregarCantidad}>+</button>
             </div>
-            <button className="addToCartBtn" onClick={onAdd} disabled={disabled}>Agregar al carrito</button>
+            <button className="add" onClick={onAdd} disabled={disabled} >Add to Cart</button>
 
         </div>
      );

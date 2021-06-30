@@ -1,3 +1,8 @@
 .itemListMessage{
     color: black;
 }
+.itemListContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: red|;
+}

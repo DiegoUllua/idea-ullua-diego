@@ -1,16 +1,16 @@
 import React from 'react';
 import './navBar.css';
 import Cart from '../cart/cart'
-
+import {Link} from 'react-router-dom'
 const NavBar = () => {
     
     return (  
         <nav>
             <div className="nav_item">
-                 <a href="www.google.com"><p>computadoras</p> </a>
-                 <a href="www.google.com"><p>accesorios</p> </a>
-                 <a href="www.google.com"><p>software</p> </a>
-                 <a href="www.google.com"><p>merchandising</p> </a>
+                 <Link to="/computadoras">computadoras</Link>
+                 <Link to="/accesorios">accesorios</Link>
+                 <Link to="www.google.com">software </Link>
+                 <Link to="www.google.com">merchandising </Link>
             </div>
             <div className="nav_item">
                  <Cart />
